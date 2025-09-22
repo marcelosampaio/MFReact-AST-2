@@ -1,0 +1,101 @@
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px; /* mobile */
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 260px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 480px;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 14px;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 700px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .bio {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
